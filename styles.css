@@ -33,5 +33,7 @@ li + li {
 /*    font-style: normal;*/
 /*}*/
 
-
-
+/*child indexed pseudo classes*/
+li:nth-child(2n + 1) {
+   color: green;
+}
