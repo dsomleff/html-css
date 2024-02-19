@@ -1,0 +1,37 @@
+/*class selector*/
+.resume-list {
+    font-style: italic;
+}
+
+/*id selector*/
+#work_history {
+    font-weight: bold;
+}
+
+/*combine selectors*/
+ul, ol {
+    font-style: revert;
+}
+
+/*descendant combinator*/
+blockquote p {
+    font-weight: bold;
+}
+
+/*child combinator*/
+form > p {
+    font-weight: bold;
+}
+
+/*next sibling combinator*/
+li + li {
+    font-weight: bold;
+}
+
+/*subsequent siblings combinator*/
+/*h2 ~ blockquote {*/
+/*    font-style: normal;*/
+/*}*/
+
+
+
