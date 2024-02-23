@@ -42,3 +42,8 @@ li:nth-child(2n + 1) {
 #about_me > p:nth-of-type(odd) {
     color: pink;
 }
+
+/*user action pseudo class*/
+a:visited {
+    color: indianred;
+}
