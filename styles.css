@@ -37,3 +37,8 @@ li + li {
 li:nth-child(2n + 1) {
    color: green;
 }
+
+/* typed child indexed pseudo classes*/
+#about_me > p:nth-of-type(odd) {
+    color: pink;
+}
