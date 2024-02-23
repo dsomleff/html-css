@@ -55,3 +55,8 @@ a:focus, a:hover {
 input:focus {
     outline: rebeccapurple solid 2px;
 }
+
+/*negation pseudo class*/
+section:not(#about_me, #work_history) {
+    color: dimgrey;
+}
