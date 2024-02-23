@@ -60,3 +60,8 @@ input:focus {
 section:not(#about_me, #work_history) {
     color: dimgrey;
 }
+
+/*pseudo-elements*/
+p::first-letter {
+    font-weight: bold;
+}
