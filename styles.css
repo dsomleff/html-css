@@ -65,3 +65,10 @@ section:not(#about_me, #work_history) {
 p::first-letter {
     font-weight: bold;
 }
+
+/* allows to select all descendants of el specified in the ()
+ read this from right to left
+ */
+:is(ul.resume-list, ol) li {
+    outline: solid 1px dimgrey;
+}
