@@ -34,7 +34,8 @@ section.skills        011
 
 /*so #skills .resume-list wins and it styles will apply*/
 ```
-- Order of Appearance - if after all above styles still in conflict, the last style in the list wins.
+- Order of Appearance - if after all above styles still in conflict, the last style in the list wins. Same with 
+  `@import` styles.
 ```css
 font-weith: bolder; 110
 font-weith: bold; 110 // this will wins
