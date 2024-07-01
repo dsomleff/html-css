@@ -8,6 +8,7 @@
 nav {
   position: sticky;
   top: 0px;
+  background-color: white;
 }
 
 body {
@@ -36,4 +37,13 @@ main {
 
 .resume-fieldset legend {
   padding: 0;
+}
+
+.label-standard {
+  display: block;
+  margin: 0.125rem;
+}
+
+.field {
+  margin-bottom: 1.25rem;
 }
