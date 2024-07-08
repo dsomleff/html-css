@@ -29,6 +29,12 @@ main {
   margin: 0 auto;
 }
 
+#about_me {
+  background-color: black;
+  color: white;
+  display: flow-root;
+}
+
 #testimonial blockquote {
   border: solid 1px black;
   padding: 0 0.5rem;
