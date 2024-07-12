@@ -13,16 +13,20 @@ nav {
   position: sticky;
   inset-block-start: 0;
   background-color: white;
-  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  margin-inline: 0;
 }
 
 nav ul li {
-  display: inline;
   /* left and right */
   margin-inline: 0.25rem;
   /* top and bottom */
   margin-block: 0;
   line-height: 1.5rem;
+  list-style: none;
 }
 
 main {
@@ -38,7 +42,11 @@ main {
 #about_me {
   background-color: black;
   color: white;
-  display: flow-root;
+  display: flex;
+}
+
+#testimonial {
+  display: flex;
 }
 
 #testimonial blockquote {
@@ -75,7 +83,6 @@ main {
 }
 
 .my-picture {
-  float: inline-start;
   max-inline-size: 75px;
   margin-inline-end: 1rem;
 }

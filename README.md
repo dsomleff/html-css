@@ -1,12 +1,14 @@
 # CSS Notes
 
 ### Cascade rules
-CSS combine stylesheets from the authors (coder) and browsers (user agent). Process of combining them is called - 
+
+CSS combine stylesheets from the authors (coder) and browsers (user agent). Process of combining them is called -
 `Cascade`. </br>
 When multiple selectors target the same elements using the same properties, the conflicts are resolved via the
 `Cascade`. </br>
 If styles lives in multiple resources, they are combine into one stack and then parsed. </br>
 Order of priority:
+
 1. Important user agent declaration
 2. Important author declaration
 3. Normal author declaration
@@ -20,6 +22,7 @@ Order of priority:
   - count classes of selector (1 point)
   - count type and pseudo-elements (1 point)
   - modern IDE calculates all above for you
+
 ```css
 #skills               100
 #skills .resume-list  110
@@ -34,9 +37,21 @@ section.skills        011
 
 /*so #skills .resume-list wins and it styles will apply*/
 ```
-- Order of Appearance - if after all above styles still in conflict, the last style in the list wins. Same with 
+
+- Order of Appearance - if after all above styles still in conflict, the last style in the list wins. Same with
   `@import` styles.
+
 ```css
 font-weith: bolder; 110
 font-weith: bold; 110 // this will wins
+```
+
+### Parameters of a flow
+
+```
+inline
+---------------------
+|
+|
+| block
 ```
