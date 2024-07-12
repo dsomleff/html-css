@@ -47,6 +47,7 @@ main {
 
 #testimonial {
   display: flex;
+  flex-direction: column;
 }
 
 #testimonial blockquote {
