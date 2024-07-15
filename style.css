@@ -17,6 +17,7 @@ nav {
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   margin-inline: 0;
 }
 
@@ -43,6 +44,7 @@ main {
   background-color: black;
   color: white;
   display: flex;
+  flex-wrap: wrap;
 }
 
 #about_me aside {
@@ -51,6 +53,7 @@ main {
 
 #testimonial {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
