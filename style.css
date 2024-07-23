@@ -61,6 +61,14 @@ main {
 
 #portfolio {
   display: grid;
+  /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+  /*grid-template-rows: 1fr 1fr;*/
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+#portfolio img {
+  max-inline-size: 100%;
 }
 
 #testimonial {
