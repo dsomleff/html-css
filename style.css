@@ -64,12 +64,22 @@ main {
     /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
     /*grid-template-rows: 1fr 1fr;*/
     /*short version*/
-    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    grid-template: repeat(2, 1fr) / repeat(5, 1fr);
+    grid-template-areas:
+        "portfolio anchor img1 img2 img3"
+        "portfolio anchor img4 img5 img6";
     grid-gap: 10px;
 }
 
+#portfolio h2 {
+    grid-area: portfolio;
+}
 #portfolio img {
     max-inline-size: 100%;
+}
+
+img.anchor {
+    grid-area: anchor;
 }
 
 #testimonial {
