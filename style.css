@@ -10,6 +10,20 @@ body {
     display: grid;
     margin-inline: 0;
     margin-block: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2 {
+    font-family: "Dosis", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+input,
+select,
+textarea {
+    font-family: "Montserrat", sans-serif;
 }
 
 nav {
