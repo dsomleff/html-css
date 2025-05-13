@@ -106,7 +106,7 @@ main > * {
         "portfolio anchor img4 img5 img6";
     grid-gap: 10px;
     align-items: end;
-    background-color: #f74d65;
+    background-color: rgba(247, 77, 101, 0.9);
     padding-block: 1rem;
 }
 
@@ -117,6 +117,10 @@ main > * {
 }
 #portfolio img {
     max-inline-size: 100%;
+}
+
+#portfolio img:hover {
+    opacity: 0.7;
 }
 
 img.anchor {
