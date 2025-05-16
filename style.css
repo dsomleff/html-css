@@ -121,6 +121,7 @@ main > * {
 
 #portfolio img:hover {
     opacity: 0.7;
+    transition: opacity 0.5s;
 }
 
 img.anchor {
@@ -179,4 +180,19 @@ blockquote.featured {
 .my-picture {
     max-inline-size: 75px;
     margin-inline-end: 1rem;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    border-inline: none;
+    border-block: none;
+}
+
+button:hover {
+    background-color: rgba(247, 77, 101, 0.9);
+    transition: background-color 0.5s;
 }
