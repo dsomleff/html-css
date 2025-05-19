@@ -215,7 +215,7 @@ button:hover {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (width >= 1200px) {
     main {
         grid-template-columns: 1fr 900px 1fr;
     }
