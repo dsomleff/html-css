@@ -1,5 +1,9 @@
 /*@import "styles.css";*/
 
+:root {
+    --accent-color: rgba(247, 77, 101, 0.9);
+}
+
 /*reset user agent styles*/
 * {
     box-sizing: border-box;
@@ -107,7 +111,7 @@ main > * {
         "portfolio anchor img4 img5 img6";
     grid-gap: 10px;
     align-items: end;
-    background-color: rgba(247, 77, 101, 0.9);
+    background-color: var(--accent-color);
     padding-block: 1rem;
 }
 
@@ -194,7 +198,7 @@ button {
 }
 
 button:hover {
-    background-color: rgba(247, 77, 101, 0.9);
+    background-color: var(--accent-color);
     transition: background-color 0.5s;
 }
 
