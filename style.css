@@ -45,22 +45,22 @@ nav {
     background-color: white;
     display: flex;
     justify-content: center;
-}
 
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    padding-inline: 0;
-    justify-content: center;
-}
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding-inline: 0;
+        justify-content: center;
 
-nav ul li {
-    /* left and right */
-    margin-inline: 0.25rem;
-    /* top and bottom */
-    margin-block: 0;
-    line-height: 1.5rem;
-    list-style: none;
+        li {
+            /* left and right */
+            margin-inline: 0.25rem;
+            /* top and bottom */
+            margin-block: 0;
+            line-height: 1.5rem;
+            list-style: none;
+        }
+    }
 }
 
 main {
@@ -69,10 +69,10 @@ main {
     display: grid;
     grid-template-columns: 50px 1fr 50px;
     row-gap: 10px;
-}
 
-main > * {
-    grid-column: 2;
+    > * {
+        grid-column: 2;
+    }
 }
 
 .full-bleed {
@@ -90,14 +90,18 @@ main > * {
     color: white;
     display: flex;
     flex-wrap: wrap;
-}
 
-#about_me aside {
-    order: 10;
-}
+    h2 {
+        color: white;
+    }
 
-#about_me h2 {
-    color: white;
+    footer {
+        text-align: center;
+    }
+
+    aside {
+        order: 10;
+    }
 }
 
 #portfolio {
@@ -113,20 +117,21 @@ main > * {
     align-items: end;
     background-color: var(--accent-color);
     padding-block: 1rem;
-}
 
-#portfolio h2 {
-    grid-area: portfolio;
-    align-self: start;
-    margin-block: 0;
-}
-#portfolio img {
-    max-inline-size: 100%;
-}
+    h2 {
+        grid-area: portfolio;
+        align-self: start;
+        margin-block: 0;
+    }
 
-#portfolio img:hover {
-    opacity: 0.7;
-    transition: opacity 0.5s;
+    img {
+        max-inline-size: 100%;
+    }
+
+    img:hover {
+        opacity: 0.7;
+        transition: opacity 0.5s;
+    }
 }
 
 img.anchor {
@@ -138,24 +143,24 @@ img.anchor {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
-}
 
-#testimonial blockquote {
-    border-inline: solid 1px black;
-    border-block: solid 1px black;
-    padding-inline: 0.5rem;
-    padding-block: 0.5rem;
-    margin-inline: 0;
-    margin-block: 0.5rem;
-}
+    blockquote {
+        border-inline: solid 1px black;
+        border-block: solid 1px black;
+        padding-inline: 0.5rem;
+        padding-block: 0.5rem;
+        margin-inline: 0;
+        margin-block: 0.5rem;
 
-#testimonial h2 {
-    order: -2;
-}
+        &.featured {
+            order: -1;
+            flex: 1 0 auto;
+        }
+    }
 
-blockquote.featured {
-    order: -1;
-    flex: 1 0 auto;
+    h2 {
+        order: -2;
+    }
 }
 
 .resume-fieldset {
@@ -165,11 +170,11 @@ blockquote.featured {
     margin-block: 0;
     padding-inline: 0;
     padding-block: 0;
-}
 
-.resume-fieldset legend {
-    padding-inline: 0;
-    padding-block: 0;
+    legend {
+        padding-inline: 0;
+        padding-block: 0;
+    }
 }
 
 .label-standard {
