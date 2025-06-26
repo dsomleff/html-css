@@ -208,10 +208,25 @@ main {
     display: block;
     margin-inline: 0.125rem;
     margin-block: 0.125rem;
+
+    &:has(~ input:focus, ~ select:focus, ~ textarea:focus) {
+        font-weight: bold;
+    }
 }
 
 .field {
     margin-block-end: 1.25rem;
+}
+
+form:has(input:focus, select:focus, textarea:focus) {
+    border-inline-start: solid 2px #ccc;
+    padding-inline-start: 1rem;
+}
+
+#contact_me h2 {
+    &:has(~ form input:focus, ~ form select:focus, ~ form textarea:focus) {
+        font-weight: bold;
+    }
 }
 
 .my-picture {
