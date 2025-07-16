@@ -1,5 +1,5 @@
 /* Declare layers in order of priority */
-@layer reset, base;
+@layer reset, base, navigation;
 
 /* Reset and base styles */
 @layer reset {
@@ -7,6 +7,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: "Inter", sans-serif;
     }
 
     html,
@@ -56,3 +57,91 @@
         color: inherit;
     }
 }
+
+@layer navigation {
+    header {
+        background: var(--dark-bg);
+        color: var(--light-text);
+        padding: 1rem 0;
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: calc(100% - 2rem);
+            margin: auto;
+            padding: 0 1rem;
+
+            .logo {
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+
+            .menu-toggle {
+                font-size: 2rem;
+
+                @media (width > 768px) {
+                    display: none;
+                }
+            }
+
+            .nav-links {
+                display: none;
+                background: var(--dark-bg);
+                text-align: right;
+                list-style: none;
+                flex-direction: column;
+
+                &.active {
+                    display: flex;
+                }
+
+                @media (width <= 768px) {
+                    top: 60px;
+                    right: 0;
+                    width: 100%;
+                    position: absolute;
+                }
+
+                @media (width > 768px) {
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                li {
+                    margin: 0;
+
+                    @media (width > 768px) {
+                        margin-left: 1rem;
+                    }
+
+                    a {
+                        display: block;
+                        padding: 1rem;
+                        cursor: pointer;
+
+                        &:hover {
+                            @media (width <= 768px) {
+                                background: var(--secondary-color);
+                                color: var(--light-var);
+                            }
+                        }
+
+                        @media (width <= 768px) {
+                            border-bottom: 1px solid var(--secondary-color);
+                            transition:
+                                background 0.3s,
+                                color 0.3s;
+                        }
+
+                        @media (width > 768px) {
+                            padding: 0.5rem 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

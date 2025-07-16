@@ -9,8 +9,17 @@
     <body>
         <header>
             <nav aria-label="Main navigation">
-                <p>Landing Page</p>
-                <ul>
+                <p class="logo">Landing Page</p>
+                <a
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Menu button"
+                    aria-expanded="false"
+                >
+                    ☰
+                </a>
+
+                <ul class="nav-links" id="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#about">About</a></li>
@@ -100,5 +109,20 @@
         <footer>
             <p>&copy All rights alright</p>
         </footer>
+
+        <script>
+            document
+                .getElementById("menu-toggle")
+                .addEventListener("click", function () {
+                    document
+                        .getElementById("nav-links")
+                        .classList.toggle("active");
+                    document.getElementById("menu-toggle").ariaExpanded =
+                        document.getElementById("menu-toggle").ariaExpanded ==
+                        "true"
+                            ? "false"
+                            : "true";
+                });
+        </script>
     </body>
 </html>
