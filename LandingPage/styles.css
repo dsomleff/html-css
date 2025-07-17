@@ -299,5 +299,14 @@
             }
         }
     }
+
+    footer {
+        background: var(--dark-bg);
+        color: var(--light-text);
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
+        margin-top: auto;
+    }
 }
 
