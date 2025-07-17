@@ -241,5 +241,63 @@
             text-align: center;
         }
     }
+
+    .contact {
+        padding: 3rem 1rem;
+        background: var(--light-bg);
+        text-align: center;
+        width: 100%;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            label {
+                margin-top: 1rem;
+            }
+
+            input,
+            textarea {
+                width: calc(100% - 2rem);
+                max-width: 500px;
+                padding: 0.5rem;
+                margin-top: 0.5rem;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            button {
+                margin-top: 1rem;
+                padding: 0.75rem 1.5rem;
+                border: none;
+                background: var(--dark-bg);
+                color: var(--light-text);
+                border-radius: 5px;
+                transition: background 0.3s;
+                cursor: pointer;
+
+                &:hover {
+                    background: var(--secondary-color);
+                }
+            }
+
+            &:has(
+                input:not(:placeholder-shown),
+                input:focus,
+                textarea:not(:placeholder-shown),
+                textarea:focus
+            ) {
+                button {
+                    background-color: var(--primary-color);
+                }
+            }
+        }
+    }
 }
 
