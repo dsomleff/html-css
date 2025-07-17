@@ -223,5 +223,23 @@
             padding: 2rem;
         }
     }
+
+    .about {
+        padding: 3rem 1rem;
+        background: var(--background-color);
+        text-align: center;
+        width: 100%;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
 }
 
